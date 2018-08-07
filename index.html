@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang='eng'>
+
+<head>
+  <meta charset='UTF-8'>
+  <meta name='viewport' content='width=device-width, initial-scale=1.0'>
+  <meta http-equiv='X-UA-Compatible'>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/css/bootstrap.min.css" integrity="sha384-Smlep5jCw/wG7hdkwQ/Z5nLIefveQRIY9nfy6xoR1uRYBtpZgI6339F5dgvm/e9B" crossorigin="anonymous">
+  <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+  <title>Meal Tracker</title>
+</head>
+
+<body>
+  <!--Nav bar-->
+  <nav class='navbar navbar-light bg-info'>
+    <div class='container'>
+      <h1 class='nav'>Calorie Tracker</h1>
+      <a href='#' class='clear-btn btn btn-outline-dark float-right'>Clear all</a>
+    </div>
+
+  </nav>
+
+  <!--Form card-->
+  <div class='container'>
+    <div class='card border-info mt-3'>
+      <h2 class='card-header text-center'>Add Meal / Food Item</h2>
+      <div class="card-body">
+        <form>
+          <div class='row'>
+            <div class='col'>
+              <label for='meal'>Meal</label>
+              <br>
+              <input id='meal' class='form-control mb-3' placeholder='Add Item' type='text'>
+            </div>
+            <div class='col'>
+              <label for='calories'>Calories</label>
+              <br>
+              <input id='calories' class='form-control mb-3' placeholder='Add Calories' type='number'>
+            </div>
+          </div>
+
+          <!--Buttons-->
+          <button class='add-btn btn btn-primary m-1'><i class='fa fa-plus'></i> Add Meal</button>
+          <button class='update-btn btn btn-warning m-1'><i class='fa fa-pencil-square-o'></i> Update Meal</button>
+          <button class='delete-btn btn btn-danger m-1'><i class='fa fa-remove'></i> Delete Meal</button>
+          <button class='back-btn btn btn-secondary float-right'><i class='fa fa-chevron-circle-left'></i> Back</button>
+        </form>
+      </div>
+    </div>
+
+    <!--Calorie count-->
+    <h2 class='text-center mt-3'>Total Calories: <span class='total-calories'>0</span><h2>
+
+      <!--Item list-->
+      <ul id='item-list' class='list-group'></ul>
+  </div>
+
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/js/bootstrap.min.js" integrity="sha384-o+RDsa0aLu++PJvFqy8fFScvbHFLtbvScb8AjopnFD+iEQ7wo/CG0xlczd+2O/em" crossorigin="anonymous"></script>
+  <script src='app.js'></script>
+</body>
+
+</html>
